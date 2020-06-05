@@ -1,0 +1,27 @@
+# Network Model
+
+#### TCP/IP 模型
+
+![img](https://static001.geekbang.org/resource/image/9d/94/9d9b3c9274465c94e223676b6d434194.png)
+
+> TCP/IP网络分层模型
+>
+> 1. 链接层：负责以太网、Wi-Fi的底层网络上的发送原始数据；
+> 2. 网际层或网络互联层：IP协议在这里
+> 3. 传输层：TCP/IP
+> 4. 应用层：HTTP
+>
+> 
+>
+> OSI：Open System Interconnection Reference Model
+>
+> 开发时系统互联通信参考模型
+>
+> 1. 物理层：网络的物理形式，例如电缆、光纤、网卡、集线器
+> 2. 数据链路层：TCP/IP的链接层
+> 3. 网络层：TCP/IP的网际层
+> 4. 传输层：TCP/IP的传输层
+> 5. 会话层：维护网络中的链接状态，保持会话和同步
+> 6. 表示层：把数据转换为合适、可理解的语法和语义
+> 7. 应用层：面向具体的应用传输数据
+
