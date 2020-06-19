@@ -113,8 +113,6 @@ queue // []
 
 ###### 链表
 
-![](https://tva1.sinaimg.cn/large/007S8ZIlly1gdvycjxgm0j30m60faq3m.jpg)
-
 ```js
 // 创建
 function ListNode(val) {
@@ -129,10 +127,11 @@ node.next = new ListNode(2);
 // 添加 其实是在原来的链表中插入一个关系，插入的X的上游是原来的上游，下游是对应的next
 const node3 = new ListNode(3);
 node3.next = node.next;
-node1.next = node3;
+node.next = node3;
 
 // 删除 删除的关键是“定位目标节点的前驱结点”
 const target = node1.next;
+node1.next = target.val; // 需要同时将对应的值也删掉
 node1.next = target.next;
 
 // 访问
