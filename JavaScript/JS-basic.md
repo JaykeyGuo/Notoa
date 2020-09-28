@@ -143,3 +143,89 @@ https://eslint.org/docs/rules/guard-for-in
 | `slice(start, end)`     | 从 `start` 到 `end`（不含 `end`）                     | 允许                |
 | `substring(start, end)` | `start` 与 `end` 之间（包括 `start`，但不包括 `end`） | 负值代表 `0`        |
 | `substr(start, length)` | 从 `start` 开始获取长为 `length` 的字符串             | 允许 `start` 为负数 |
+
+
+
+### forEach function
+
+#### array forEach
+
+```js
+// arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
+array.forEach((item, index, arr) => { ... }, this);
+```
+
+#### Map forEach
+
+```js
+// myMap.forEach(callback([value][,key][,map])[, thisArg])
+mappp.forEach((item, index, map) => { ... }, this);
+```
+
+#### Set forEach
+
+Set 是值的集合，没有键值
+
+```js
+// mySet.forEach(callback[, thisArg])
+set.forEach((value, valueAgain, set) => { ... }, this);
+```
+
+
+
+
+
+### Object.keys() & map.keys()
+
+|          | Map          | Object                                  |
+| :------- | :----------- | :-------------------------------------- |
+| 调用语法 | `map.keys()` | `Object.keys(obj)`，而不是 `obj.keys()` |
+| 返回值   | 可迭代项     | “真正的”数组                            |
+
+
+
+### [Date.parse()](https://zh.javascript.info/date#dui-yi-ge-zi-fu-chuan-shi-yong-dateparse)
+
+```js
+let ms = Date.parse('2012-01-26T13:51:50.417-07:00');
+```
+
+
+
+### [JSON.stringify 循环引用](https://zh.javascript.info/json#pai-chu-fan-xiang-yin-yong)
+
+```js
+let room = { number: 23 };
+let meetup = {
+  title: 'conference',
+  occupiedBy: [{name: 'John'}, {name: 'Alice'}],
+  place: room,
+};
+
+room.occupiedBy = meetup;
+meetup.self = meetup;
+
+JSON.stringify(meetup, function replacer(key, value) {
+  return (key != '' && value === meetup) ? undefined : value;
+});
+```
+
+
+
+### **箭头函数是没有 `"arguments"`**
+
+如果我们在箭头函数中访问 `arguments`，访问到的 `arguments` 并不属于箭头函数，而是属于箭头函数外部的“普通”函数。
+
+举个例子：
+
+```javascript
+function f() {
+  let showArg = () => alert(arguments[0]);
+  showArg();
+}
+
+f(1); // 1
+```
+
+我们已经知道，箭头函数没有自身的 `this`。现在我们知道了它们也没有特殊的 `arguments` 对象。
+
