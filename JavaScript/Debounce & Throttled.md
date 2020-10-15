@@ -18,7 +18,7 @@ function debounce(func, ms) {
 
 ```js
 function throttle(func, ms) {
-  let isThrottled = fasle,
+  let isThrottled = false,
       savedArgs,
       savedThis;
 

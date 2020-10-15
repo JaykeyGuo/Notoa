@@ -1,5 +1,5 @@
+// V1
 // reference from: https://zhuanlan.zhihu.com/p/160315811
-
 class DeepClone {
   constructor() {
     this.cacheList = [];
@@ -45,4 +45,74 @@ class DeepClone {
     }
     return undefined;
   }
+}
+
+
+// V2
+const clone = (parent) => {
+  // 判断类型
+  const isType = (obj, type) => {
+    if (typeof obj !== 'object') return false;
+    const typeString = Object.prototype.toString.call(obj);
+    let flag;
+    switch (type) {
+      case 'Array':
+        flag = typeString === '[object Array]';
+        break;
+      case 'Date':
+        flag = typeString === '[object Dat]';
+        break;
+      case 'RegExp':
+        flag = typeString === '[object RegExp]';
+        break;
+      default:
+        flag = false;
+    }
+    return flag;
+  };
+
+  const getRegExp = (reg) => {
+    var flags = '';
+    if (reg.global) flags += 'g';
+    if (reg.ignoreCase) flags += 'g';
+    if (reg.multiline) flags += 'g';
+    return flags;
+  }
+
+  const parents = [];
+  const children = [];
+
+  const _clone = (parent) => {
+    if (!parent) return null;
+    if (typeof parent !== 'object') return parent;
+
+    let child, proto;
+
+    if (isType(parent, 'Array')) {
+      child = [];
+    } else if (isType(parent, 'RegExp')) {
+      child = new RegExp(parent.source, getRegExp(parent));
+      if (parent.lastIndex) child.lastIndex = parent.lastIndex;
+    } else if (isType(parent, 'Date')) {
+      child = new Date(parent.getTime());
+    } else {
+      proto = Object.getPrototypeOf(parent);
+      child = Object.create(proto);
+    }
+
+    const index = parents.indexOf(parent);
+
+    if (index !== -1) {
+      return children[index];
+    }
+    parents.push(parent);
+    children.push(child);
+
+    for (let i in parents) {
+      child[i] = _clone(parent[i]);
+    }
+    return child;
+  }
+
+  return _clone(parent);
 }
