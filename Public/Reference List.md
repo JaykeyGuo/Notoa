@@ -9,6 +9,7 @@
 - [ ] [十道大厂面试题(含答案)总结](https://mp.weixin.qq.com/s?__biz=MzI0MzIyMDM5Ng==&mid=2649826748&idx=1&sn=b99c71baa5de04287b1ab79b72bda619&chksm=f175ef7fc6026669c7484329f7c81f57db5e0f1a8c0714b8e7ed21a5f46445efde3b76c04d7e&scene=21#wechat_redirect)
 - [ ] [2年前端暑期面试打怪升级](https://juejin.im/post/6876327630212169735)
 - [ ] [互联网大厂的面经大全](https://juejin.im/post/6844904085003436040#heading-3)
+- [ ] [前端 100 问](https://github.com/yygmind/blog/issues/43)
 
 
 
@@ -51,6 +52,14 @@
 ### 网络协议
 
 - [ ] [HTTP-cache](https://web.dev/http-cache/)
+
+
+
+---
+
+### 跨域问题
+
+- [ ] [9种常见的前端跨域解决方案（详解）](https://juejin.im/post/6844903882083024910)
 
 
 
@@ -132,6 +141,16 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 - [x] [小程序底层实现原理及一些思考-1](https://github.com/berwin/Blog/issues/43)
 - [ ] [小程序底层实现原理及一些思考-2](https://github.com/berwin/Blog/issues/49)
 - [ ] [小程序原理-思维导读](https://user-images.githubusercontent.com/14784326/76877271-1b4f4700-68ae-11ea-9d40-f0a87df74f67.png)
+
+
+
+---
+
+### 移动端问题
+
+- [x] [移动页面点击穿透问题解决方案](https://juejin.im/entry/6844903427147825165)
+
+  只用touch或者click
 
 
 
