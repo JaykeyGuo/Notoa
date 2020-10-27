@@ -10,6 +10,7 @@
 - [ ] [2年前端暑期面试打怪升级](https://juejin.im/post/6876327630212169735)
 - [ ] [互联网大厂的面经大全](https://juejin.im/post/6844904085003436040#heading-3)
 - [ ] [前端 100 问](https://github.com/yygmind/blog/issues/43)
+- [ ] [高频前端开发面试问题及答案整理](https://mp.weixin.qq.com/s/g8dzoNJc2XZTE_W2lgQf-g)
 
 
 
@@ -27,9 +28,10 @@
 - [ ] [Vue响应式原理 - 关于Array的特别处理](https://juejin.im/post/6844903917898186766)
 - [x] [了解JavaScript模块系统的基础知识](https://www.yuque.com/docs/share/ffbb4fa7-ab00-4aa5-abb8-760cb09e806b)
 - [ ] [Promise链式调用原理](https://github.com/LuckyWinty/blog/issues/3)
-- [ ] [事件循环机制](https://mp.weixin.qq.com/s?__biz=MzI0MzIyMDM5Ng==&mid=2649826653&idx=1&sn=9e5e2de78a8ef4de3820769ff3ab7c02&chksm=f175ef9ec60266880a86f33085ff43f95e3180846c5f139cb9b1b33c3245201157f39d949e9a&scene=21#wechat_redirect)
+- [x] [事件循环机制](https://mp.weixin.qq.com/s?__biz=MzI0MzIyMDM5Ng==&mid=2649826653&idx=1&sn=9e5e2de78a8ef4de3820769ff3ab7c02&chksm=f175ef9ec60266880a86f33085ff43f95e3180846c5f139cb9b1b33c3245201157f39d949e9a&scene=21#wechat_redirect)
 - [ ] [小程序原理](https://user-gold-cdn.xitu.io/2020/3/18/170e94178441ffc8?imageslim)
 - [ ] [bind() 和 箭头函数的this](https://www.jianshu.com/p/8a0af572cef0)
+- [x] [js 内存泄漏场景、如何监控以及分析](https://juejin.im/post/6844904048961781774)
 
 
 
@@ -88,7 +90,7 @@
 ### 手写
 
 - [ ] [22 道高频 JavaScript 手写面试题及答案](https://juejin.im/post/6844903911686406158#heading-1)
-- [ ] [手写JS函数的call、apply、bind实现](https://juejin.im/post/6844904008386084878)
+- [x] [手写JS函数的call、apply、bind实现](https://juejin.im/post/6844904008386084878)
 - [x] [JavaScript深入之call和apply的模拟实现](https://github.com/mqyqingfeng/Blog/blob/master/articles/%E6%B7%B1%E5%85%A5%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/JavaScript%E6%B7%B1%E5%85%A5%E4%B9%8Bcall%E5%92%8Capply%E7%9A%84%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0.md)
 - [x] [JavaScript深入之bind的模拟实现](https://github.com/mqyqingfeng/Blog/issues/12)
 
@@ -185,3 +187,6 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 - [HTTP档案馆](https://httparchive.org/)
 - [玖五Blog](https://github.com/berwin/Blog)
 
+
+
+archive
