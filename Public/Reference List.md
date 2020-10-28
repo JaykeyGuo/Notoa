@@ -11,6 +11,7 @@
 - [ ] [互联网大厂的面经大全](https://juejin.im/post/6844904085003436040#heading-3)
 - [ ] [前端 100 问](https://github.com/yygmind/blog/issues/43)
 - [ ] [高频前端开发面试问题及答案整理](https://mp.weixin.qq.com/s/g8dzoNJc2XZTE_W2lgQf-g)
+- [ ] [FE-Interview 基础](https://poetries1.gitee.io/fe-interview/docs/base.html)
 
 
 
@@ -22,7 +23,7 @@
 - [x] [ES6 系列之 WeakMap](https://segmentfault.com/a/1190000015774465)
 - [ ] [Webpack HMR](https://mp.weixin.qq.com/s/gG_FwVGHiJGjQOvt5rZheA)
 - [ ] [Vite HMR](https://mp.weixin.qq.com/s/ptFnSP8eE4aH4KddJTqvlw)
-- [ ] [累死累活做业务，绩效还不怎么样，我只能帮你到这](https://github.com/mqyqingfeng/Blog/issues/172)
+- [x] [累死累活做业务，绩效还不怎么样，我只能帮你到这](https://github.com/mqyqingfeng/Blog/issues/172)
 - [x] [JS原型相关知识点](https://mp.weixin.qq.com/s/Ix8atSxrSy2OHCZzLvW9VA)
 - [x] [JavaScript原型-面试题](https://segmentfault.com/a/1190000021860580)
 - [ ] [Vue响应式原理 - 关于Array的特别处理](https://juejin.im/post/6844903917898186766)
@@ -82,6 +83,7 @@
 - [ ] [小册-前端算法与数据结构2⃣️1⃣️](https://juejin.im/book/6844733800300150797/section/6844733800283373575)
 - [ ] [DFS 代码模板（递归写法、非递归写法）](http://shimo.im/docs/ddgwCccJQKxkrcTq)
 - [ ] [BFS 代码模板](http://shimo.im/docs/P8TqKHGKt3ytkYYd)
+- [ ] [Javascript Data Structure and Algorithm](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
 
 
 
@@ -107,9 +109,13 @@
 - [x] [👇（译文）Web 性能优化：Preload与Prefetch的使用及在 Chrome 中的优先级](https://blog.fundebug.com/2019/04/11/understand-preload-and-prefetch/)
 - [x] [Preload, Prefetch And Priorities in Chrome](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 - [x] [使用 Preload/Prefetch 优化你的应用](https://zhuanlan.zhihu.com/p/48521680#:~:text=preload%20%E6%98%AF%E5%91%8A%E8%AF%89%E6%B5%8F%E8%A7%88%E5%99%A8,%E4%BD%BF%E7%94%A8%E7%9A%84%E8%B5%84%E6%BA%90%E4%BD%BF%E7%94%A8prefetch%E3%80%82)
-- [ ] [捕获FMP的原理](https://github.com/berwin/Blog/issues/42)
+- [x] [捕获FMP的原理](https://github.com/berwin/Blog/issues/42)
 - [ ] [关键渲染路径](https://github.com/berwin/Blog/issues/29)
-- [ ] [嗨，送你一张Web性能优化地图](https://github.com/berwin/Blog/issues/23)
+- [x] [嗨，送你一张Web性能优化地图](https://github.com/berwin/Blog/issues/23)
+- [x] [Web性能领域常见的专业术语](https://github.com/berwin/Blog/issues/46)
+- [x] [让你的网页更丝滑](https://ppt.baomitu.com/d/b267a4a3#/)
+- [ ] [时间切片（Time Slicing）](https://github.com/berwin/Blog/issues/38)
+- [x] [前端性能监控方案（Performance）](https://juejin.im/post/6844904020482457613)
 
 
 
@@ -121,6 +127,7 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 
 - [ ] [小册-玩转CSS的艺术之美0⃣️](https://juejin.im/book/6850413616484040711/section/6850413616542269448)
 - [x] [Optimizing CSS: ID Selectors and Other Myths](https://www.sitepoint.com/optimizing-css-id-selectors-and-other-myths/)
+- [x] [优惠券凿角](https://programmersought.com/article/48744941894/)
 
 
 
@@ -138,11 +145,11 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 
 ### 小程序
 
-- [ ] [微信、支付宝小程序实现原理概述](https://segmentfault.com/a/1190000018631528)
+- [x] [微信、支付宝小程序实现原理概述](https://segmentfault.com/a/1190000018631528)
 - [ ] [微信小程序原理分析](https://zhaomenghuan.js.org/blog/wechat-miniprogram-principle-analysis.html)
 - [x] [小程序底层实现原理及一些思考-1](https://github.com/berwin/Blog/issues/43)
-- [ ] [小程序底层实现原理及一些思考-2](https://github.com/berwin/Blog/issues/49)
-- [ ] [小程序原理-思维导读](https://user-images.githubusercontent.com/14784326/76877271-1b4f4700-68ae-11ea-9d40-f0a87df74f67.png)
+- [x] [小程序底层实现原理及一些思考-2](https://github.com/berwin/Blog/issues/49)
+- [ ] [小程序原理-思维导图](https://user-images.githubusercontent.com/14784326/76877271-1b4f4700-68ae-11ea-9d40-f0a87df74f67.png)
 
 
 
@@ -150,9 +157,7 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 
 ### 移动端问题
 
-- [x] [移动页面点击穿透问题解决方案](https://juejin.im/entry/6844903427147825165)
-
-  只用touch或者click
+- [x] [移动页面点击穿透问题解决方案](https://juejin.im/entry/6844903427147825165) => 只用touch或者click
 
 
 
@@ -186,7 +191,4 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 
 - [HTTP档案馆](https://httparchive.org/)
 - [玖五Blog](https://github.com/berwin/Blog)
-
-
-
-archive
+- [CSS Triggers](https://csstriggers.com/)
