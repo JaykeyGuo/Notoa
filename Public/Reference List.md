@@ -174,6 +174,8 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 ### 编程范式 & 设计模式
 
 - [ ] [轻松玩转函数式编程](https://mp.weixin.qq.com/s/y_G6YSQkvWZpRP3XJmrIsA)
+- [ ] [Vue异步更新 && nextTick源码解析](https://juejin.im/post/6844903918472790023)
+- [ ] [Vue响应式原理 - 关于Array的特别处理](https://juejin.im/post/6844903917898186766)
 
 
 
