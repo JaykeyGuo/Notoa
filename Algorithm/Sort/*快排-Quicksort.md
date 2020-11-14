@@ -24,3 +24,36 @@ var quickSort = function(arr) {
 }
 ```
 
+
+
+
+
+---
+
+```js
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (arr.length <= 1) return arr;
+  const lineIndex = partition(arr, left, right);
+  if (left < lineIndex) quickSort(arr, left, lineIndex - 1);
+  if (lineIndex < right) quickSort(arr, lineIndex, right);
+  return arr;
+}
+
+function partition(arr, left, right) {
+  let pivotValue = arr[Math.floor(left + (right - left) / 2)];
+  let i = left, j = right;
+  while (i <= j) {
+    while (arr[i] < pivotValue) i++;
+   	while (arr[j] > pivotValue) j--;
+    if (i <= j) {
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+      i++;
+      j--;
+    }
+  }
+  return i;
+}
+```
+
+
+
