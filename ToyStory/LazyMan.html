@@ -1,0 +1,133 @@
+<script>
+  // 实现一个 HardMan:
+    // HardMan (“jack”) 输出:
+    // I am jack
+
+    // HardMan (“jack”).rest (10).learn (“computer”) 输出
+    // I am jack
+    // // 等待 10 秒
+    // Start learning after 10 seconds
+    // Learning computer
+
+    // HardMan (“jack”).restFirst (5).learn (“chinese”) 输出
+    // // 等待 5 秒
+    // Start learning after 5 seconds
+    // I am jack
+    // Learning chinese
+// class LazyMan {
+//   constructor(name) {
+//     this.name = name;
+//     this.taskQueue = [];
+//     setTimeout(() => {
+//       this.next();
+//     }, 0);
+//     this.taskQueue.push(() => {
+//       console.log(`I am ${this.name}, a lazy man`);
+//       this.next();
+//     })
+//     return this;
+//   }
+
+//   next() {
+//     let task = this.taskQueue.shift();
+//     task && task();
+//   }
+
+//   rest(time) {
+//     console.log('xxx');
+//     this.taskQueue.push(() => {
+//       console.log(`等待 ${time} 秒`);
+//       setTimeout(() => {
+//         console.log(`Strat learning after ${time} seconds`);
+//         this.next();
+//       }, time * 1000);
+//     });
+//     return this;
+//   }
+
+//   learn(sub) {
+//     this.taskQueue.push(() => {
+//       setTimeout(() => {
+//         console.log(`Learning ${sub}`);
+//         this.next();
+//       }, 0);
+//     });
+//     return this;
+//   }
+
+//   restFirst(time) {
+//     this.taskQueue.unshift(() => {
+//       console.log(`等待 ${time} 秒`);
+//       setTimeout(() => {
+//         console.log(`Strat learning after ${time} seconds`);
+//         this.next();
+//       }, time * 1000);
+//     });
+//     return this;
+//   }
+// }
+
+// // const HardMan = function () {
+// //   return new LazyMan;
+// // };
+// new LazyMan('jack').rest(5).learn('computer');
+// new LazyMan('jack').restFirst(5).learn('chinese');
+</script>
+
+<script>
+  class _HardMan {
+    constructor(name) {
+      this.name = name;
+      this.taskQueue = [];
+      setTimeout(() => this.next());
+      this.taskQueue.push(() => {
+        console.log(`I am ${this.name}`);
+        this.next()
+      });
+      return this;
+    }
+
+    next() {
+      let task = this.taskQueue.shift();
+      task && task();
+    }
+
+    rest(time) {
+      this.taskQueue.push(() => {
+        console.log(`waiting ${time} second`)
+        setTimeout(() => {
+          console.log(`Start learning after ${time} seconds`);
+          this.next();
+        }, time * 1000);
+      });
+      return this;
+    }
+
+    learn(subject) {
+      this.taskQueue.push(() => {
+        setTimeout(() => {
+          console.log(`Learing ${subject}`);
+          this.next();
+        }, 0);
+      });
+      return this;
+    }
+
+    restFirst(time) {
+      this.taskQueue.unshift(() => {
+        console.log(`waiting ${time} second`)
+        setTimeout(() => {
+          console.log(`Start learning after ${time} seconds`);
+          this.next();
+        }, time * 1000);
+      });
+      return this;
+    }
+  }
+
+const HardMan = function(name) {
+  return new _HardMan(name);
+}
+
+HardMan('jack').restFirst(5).learn('chinese');
+</script>

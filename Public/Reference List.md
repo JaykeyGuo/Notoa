@@ -12,6 +12,7 @@
 - [ ] [前端 100 问](https://github.com/yygmind/blog/issues/43)
 - [ ] [高频前端开发面试问题及答案整理](https://mp.weixin.qq.com/s/g8dzoNJc2XZTE_W2lgQf-g)
 - [ ] [FE-Interview 基础](https://poetries1.gitee.io/fe-interview/docs/base.html)
+- [ ] [【经验分享】专科毕业5年，成功入职腾讯！](https://mp.weixin.qq.com/s?__biz=MzI1NTcxOTQ1Nw==&mid=2247493962&idx=1&sn=0fca41801674d36617679a91ccc58524&chksm=ea330804dd448112ee4e63af113c40dc8621adcee61c06b0a36c75f9965f9d81b5812de390d9&scene=132#wechat_redirect)
 
 
 
@@ -36,9 +37,35 @@
 
 
 
+#### 原型与原型链
+
+- [ ] [深入理解javascript原型和闭包（完结）](https://www.cnblogs.com/wangfupeng1988/p/3977924.html)
+
+
+
 ### javascript.info
 
 - [ ] https://zh.javascript.info/coordinates
+
+- [ ] [深入理解javascript原型和闭包（1）——一切都是对象](http://www.cnblogs.com/wangfupeng1988/p/3977987.html)
+
+- [ ] [深入理解javascript原型和闭包（2）——函数和对象的关系](http://www.cnblogs.com/wangfupeng1988/p/3978035.html)
+- [ ] [深入理解javascript原型和闭包（3）——prototype原型](http://www.cnblogs.com/wangfupeng1988/p/3978131.html)
+- [ ] [深入理解javascript原型和闭包（4）——隐式原型](http://www.cnblogs.com/wangfupeng1988/p/3979290.html)
+- [ ] [深入理解javascript原型和闭包（5）——instanceof](http://www.cnblogs.com/wangfupeng1988/p/3979533.html)
+- [ ] [深入理解javascript原型和闭包（6）——继承](http://www.cnblogs.com/wangfupeng1988/p/3979985.html)
+- [ ] [深入理解javascript原型和闭包（7）——原型的灵活性](http://www.cnblogs.com/wangfupeng1988/p/3980065.html)
+- [ ] [深入理解javascript原型和闭包（8）——简述【执行上下文】](http://www.cnblogs.com/wangfupeng1988/p/3986420.html)上
+- [ ] [深入理解javascript原型和闭包（9）——简述【执行上下文】下](http://www.cnblogs.com/wangfupeng1988/p/3987563.html)
+- [ ] [深入理解javascript原型和闭包（10）——this](http://www.cnblogs.com/wangfupeng1988/p/3988422.html)
+- [ ] [深入理解javascript原型和闭包（11）——执行上下文栈](http://www.cnblogs.com/wangfupeng1988/p/3989357.html)
+- [ ] [深入理解javascript原型和闭包（12）——简介【作用域】](http://www.cnblogs.com/wangfupeng1988/p/3991151.html)
+- [ ] [深入理解javascript原型和闭包（13）-【作用域】和【上下文环境】](http://www.cnblogs.com/wangfupeng1988/p/3991995.html)
+- [ ] [深入理解javascript原型和闭包（14）——从【自由变量】到【作用域链】](http://www.cnblogs.com/wangfupeng1988/p/3992795.html)
+- [ ] [深入理解javascript原型和闭包（15）——闭包](http://www.cnblogs.com/wangfupeng1988/p/3994065.html)
+- [ ] [深入理解javascript原型和闭包（16）——完结](http://www.cnblogs.com/wangfupeng1988/p/3994950.html)
+- [ ] [深入理解javascript原型和闭包（17）——补this](http://www.cnblogs.com/wangfupeng1988/p/3996037.html)
+- [ ] [深入理解javascript原型和闭包（18）——补充：上下文环境和作用域的关系](http://www.cnblogs.com/wangfupeng1988/p/4000798.html)
 
 
 
@@ -194,3 +221,7 @@ CSS的匹配是从右到左的，所以在查找对应的元素的时候，如�
 - [HTTP档案馆](https://httparchive.org/)
 - [玖五Blog](https://github.com/berwin/Blog)
 - [CSS Triggers](https://csstriggers.com/)
+
+
+
+Custom element：https://plnkr.co/edit/hhtl31PgIAqhULc8?p=preview&preview

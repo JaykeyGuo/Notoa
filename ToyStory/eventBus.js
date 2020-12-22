@@ -1,5 +1,7 @@
 class EventBus {
-  cache = {};
+  constructor() {
+    this.cache = {};
+  }
   on(eventName, fn) {
     this.cache[eventName] = this.cache[eventName] || [];
     this.cache[eventName].push(fn);
